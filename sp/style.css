@@ -83,3 +83,7 @@ figcaption{
 .captionOn{
     filter: blur(6px);
 }
+h2{
+    text-decoration: underline;
+    margin-bottom: 0.5rem;
+}
