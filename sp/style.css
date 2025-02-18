@@ -59,8 +59,8 @@ footer{
     width: 100%;
 }
 .galleryImage{
-    width: 100%;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     object-fit: cover;
     border-radius: 15px;
     margin-bottom: 5px;
@@ -68,7 +68,7 @@ footer{
 .gallery{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .hidden{
     display: none;
@@ -79,11 +79,38 @@ figcaption{
     position: relative;
     top: -60%;
     height: 0px;
+    max-width: 350px;
 }
 .captionOn{
-    filter: blur(6px);
+    filter: opacity(30%);
 }
 h2{
     text-decoration: underline;
     margin-bottom: 0.5rem;
+}
+#frydlant{
+    object-position: 50% 15%;
+}
+/* Styl pro tablety */
+@media (min-width: 768px) {
+    .gallery{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        justify-content: center;
+    }
+    /*.galleryImage{
+        width: 600px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 15px;
+        margin-bottom: 5px;
+    }
+    figcaption{
+        text-align: center;
+        position: relative;
+        top: -60%;
+        height: 0px;
+        max-width: 600px;
+    }*/
 }
