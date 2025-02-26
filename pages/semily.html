@@ -12,17 +12,24 @@
     <header>
         <nav>
             <div id="menu">
-                <a class="icon" id="houseIcon" href="../index.html"><img class="icon"
+                <a class="icon" id="houseIcon" href="/index.html"><img class="icon"
                         src="https://www.svgrepo.com/show/512352/home-1393.svg" alt="Home icon"></a>
-                <button class="icon" id="hamburger"><img class="icon" src="https://www.svgrepo.com/show/500932/menu.svg"
-                        alt="Menu icon"></button>
+                <div class="onlyDesktop" id="desktopMenu">
+                    <a href="/pages/liberec.html"> Liberec</a>
+                    <a href="/pages/jablonec.html"> Jablonec</a>
+                    <a href="/pages/semily.html"> Semily</a>
+                    <a href="/pages/ceskaLipa.html"> Česká Lípa</a>
+                </div>
+                <button class="icon" id="switch"><img class="icon" id="switchIcon" src=""></button>
+                <button class="icon onlyMobile" id="hamburger"><img class="icon"
+                        src="https://www.svgrepo.com/show/500932/menu.svg" alt="Menu icon"></button>
             </div>
 
-            <div class="hidden" id="dropdown">
-                <a href="./liberec.html">Okres Liberec</a>
-                <a href="./jablonec.html">Okres Jablonec</a>
-                <a href="./semily.html">Okres Semily</a>
-                <a href="./ceskaLipa.html">Okres Česká Lípa</a>
+            <div id="dropdown" class="onlyMobile">
+                <a href="/pages/liberec.html">Okres Liberec</a>
+                <a href="/pages/jablonec.html">Okres Jablonec</a>
+                <a href="/pages/semily.html">Okres Semily</a>
+                <a href="/pages/ceskaLipa.html">Okres Česká Lípa</a>
             </div>
         </nav>
     </header>
@@ -67,15 +74,20 @@
                 oblastí Český ráj.</p>
         </section>
         <section>
-            <h2>Nejzajímavější místa</h2>
+            <h2>Zajímavá místa</h2>
             <div class="gallery">
                 <figure>
                     <img class="galleryImage" src="../images/trosky.jpg" alt="Hrad Trosky">
-                    <figcaption class="hidden">Hrad Trosky – historická dominanta regionu</figcaption>
+                    <figcaption class="hidden"><b>Hrad Trosky</b><br>Historická dominanta regionu</figcaption>
                 </figure>
                 <figure>
-                    <img class="galleryImage" src="../images/macha.jpg" alt="Máchovo jezero">
-                    <figcaption class="hidden">Máchovo jezero – oblíbená rekreační oblast</figcaption>
+                    <img class="galleryImage" src="../images/turnov.jpg" alt="Město Turnov">
+                    <figcaption class="hidden"><b>Turnov</b><br>Město v srdci Českého ráje</figcaption>
+                </figure>
+                <figure>
+                    <img class="galleryImage" src="../images/kotel.jpg" alt="Hora Kotel">
+                    <figcaption class="hidden"><b>Kotel (1435 m. n. m.)</b><br>Nejvyšší hora Libereckého kraje
+                    </figcaption>
                 </figure>
             </div>
         </section>

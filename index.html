@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Náš kraj</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <nav>
             <div id="menu">
-                <a class="icon" id="houseIcon" href="./index.html"><img class="icon" src="https://www.svgrepo.com/show/512352/home-1393.svg" alt="Home icon"></a>
-                <button class="icon" id="hamburger"><img class="icon" src="https://www.svgrepo.com/show/500932/menu.svg" alt="Menu icon"></button>
+                <a class="icon" id="houseIcon" href="/index.html"><img class="icon"
+                        src="https://www.svgrepo.com/show/512352/home-1393.svg" alt="Home icon"></a>
+                <div class="onlyDesktop" id="desktopMenu">
+                    <a href="/pages/liberec.html">Liberec</a>
+                    <a href="/pages/jablonec.html"> Jablonec</a>
+                    <a href="/pages/semily.html"> Semily</a>
+                    <a href="/pages/ceskaLipa.html"> Česká Lípa</a>
+                </div>
+                <button class="icon" id="switch"><img class="icon" id="switchIcon" src=""></button>
+                <button class="icon onlyMobile" id="hamburger"><img class="icon"
+                        src="https://www.svgrepo.com/show/500932/menu.svg" alt="Menu icon"></button>
             </div>
-            
-            <div class="hidden" id="dropdown">
-                <a href="./pages/liberec.html">Okres Liberec</a>
-                <a href="./pages/jablonec.html">Okres Jablonec</a>
-                <a href="./pages/semily.html">Okres Semily</a>
-                <a href="./pages/ceskaLipa.html">Okres Česká Lípa</a>
+
+            <div id="dropdown" class="onlyMobile">
+                <a href="/pages/liberec.html">Okres Liberec</a>
+                <a href="/pages/jablonec.html">Okres Jablonec</a>
+                <a href="/pages/semily.html">Okres Semily</a>
+                <a href="/pages/ceskaLipa.html">Okres Česká Lípa</a>
             </div>
-        </nav>    
+        </nav>
     </header>
     <main>
-        
+
     </main>
     <footer>
         <p><a href="https://github.com/vaclavkozeny">Václav Kožený</a></p>
@@ -32,4 +43,5 @@
     </footer>
 </body>
 <script src="./script.js"></script>
+
 </html>

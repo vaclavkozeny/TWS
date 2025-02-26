@@ -13,10 +13,9 @@ body{
     flex-direction: column;
     min-height: 100vh;
 }
-main{
-    flex: 1;
-    margin-left: 1em;
-    margin-right: 1em;
+body.darkmode{
+    background-color: #121212;
+    color: white;
 }
 button{
     background-color: transparent;
@@ -33,13 +32,11 @@ footer{
     align-items: center;
     padding: 5px;
 }
-#dropdown{
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(226, 226, 226);
+footer.darkmode{
+    background-color: #1f1b24;
 }
-#dropdown.hidden{
-    display: none;
+footer.darkmode a{
+    color: rgb(201, 3, 201);
 }
 #menu{
     display: flex;
@@ -48,69 +45,113 @@ footer{
     background-color: rgb(226, 226, 226);
     padding: 5px;
 }
+#menu.darkmode{
+    background-color: #1f1b24;
+}
+#menu.darkmode img{
+    filter: invert(1);
+}
 .icon{
     width: 30px;
     height: 30px;
 }
-#hamburger{
+#switch{
     margin-left: auto;
 }
-.topImage{
-    width: 100%;
+main{
+    flex: 1;
+    margin-left: 1em;
+    margin-right: 1em;
 }
-.galleryImage{
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 15px;
-    margin-bottom: 5px;
-}
-.gallery{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.hidden{
-    display: none;
-}
-
-figcaption{
-    text-align: center;
-    position: relative;
-    top: -60%;
-    height: 0px;
-    max-width: 350px;
-}
-.captionOn{
-    filter: opacity(30%);
-}
-h2{
-    text-decoration: underline;
-    margin-bottom: 0.5rem;
-}
-#frydlant{
-    object-position: 50% 15%;
-}
-/* Styl pro tablety */
-@media (min-width: 768px) {
+@media (max-width: 768px){
+    
+    
+    #dropdown{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(226, 226, 226);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+    #dropdown.open{
+        max-height: 100px;
+    }
+    #dropdown.darkmode{
+        background-color: #1f1b24;
+    }
+    #dropdown.darkmode a{
+        color: rgb(201, 3, 201);;
+    }
+    
+    .topImage{
+        width: 100%;
+    }
+    .galleryImage{
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 15px;
+        margin-bottom: 5px;
+    }
     .gallery{
         display: flex;
         flex-wrap: wrap;
-        gap: 5px;
         justify-content: center;
+        gap: 5px;
     }
-    /*.galleryImage{
-        width: 600px;
-        height: 400px;
+    .hidden{
+        display: none;
+    }
+    
+    figcaption{
+        text-align: center;
+        position: relative;
+        top: -60%;
+        height: 0px;
+        max-width: 350px;
+        font-size: larger;
+    }
+    .captionOn{
+        filter: opacity(20%);
+    }
+    h2{
+        text-decoration: underline;
+        margin-bottom: 0.5rem;
+    }
+    #frydlant{
+        object-position: 50% 15%;
+    }
+    .onlyDesktop{
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    main{
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .galleryImage{
+        width: 100%;
+        height: 700px;
         object-fit: cover;
         border-radius: 15px;
         margin-bottom: 5px;
     }
     figcaption{
         text-align: center;
-        position: relative;
-        top: -60%;
-        height: 0px;
-        max-width: 600px;
-    }*/
+        font-size: larger;
+    }
+    .onlyMobile{
+        display: none;
+    }
+    #desktopMenu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-left: auto;
+        gap: 50px;
+    }
 }

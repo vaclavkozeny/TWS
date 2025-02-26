@@ -10,17 +10,26 @@
     <header>
         <nav>
             <div id="menu">
-                <a class="icon" id="houseIcon" href="../index.html"><img class="icon" src="https://www.svgrepo.com/show/512352/home-1393.svg" alt="Home icon"></a>
-                <button class="icon" id="hamburger"><img class="icon" src="https://www.svgrepo.com/show/500932/menu.svg" alt="Menu icon"></button>
+                <a class="icon" id="houseIcon" href="/index.html"><img class="icon"
+                        src="https://www.svgrepo.com/show/512352/home-1393.svg" alt="Home icon"></a>
+                <div class="onlyDesktop" id="desktopMenu">
+                    <a href="/pages/liberec.html"> Liberec</a>
+                    <a href="/pages/jablonec.html"> Jablonec</a>
+                    <a href="/pages/semily.html"> Semily</a>
+                    <a href="/pages/ceskaLipa.html"> Česká Lípa</a>
+                </div>
+                <button class="icon" id="switch"><img class="icon" id="switchIcon" src=""></button>
+                <button class="icon onlyMobile" id="hamburger"><img class="icon"
+                        src="https://www.svgrepo.com/show/500932/menu.svg" alt="Menu icon"></button>
             </div>
-            
-            <div class="hidden" id="dropdown">
-                <a href="./liberec.html">Okres Liberec</a>
-                <a href="./jablonec.html">Okres Jablonec</a>
-                <a href="./semily.html">Okres Semily</a>
-                <a href="./ceskaLipa.html">Okres Česká Lípa</a>
+
+            <div id="dropdown" class="onlyMobile">
+                <a href="/pages/liberec.html">Okres Liberec</a>
+                <a href="/pages/jablonec.html">Okres Jablonec</a>
+                <a href="/pages/semily.html">Okres Semily</a>
+                <a href="/pages/ceskaLipa.html">Okres Česká Lípa</a>
             </div>
-        </nav>    
+        </nav>
     </header>
     <main>
         <h1>Okres Jablonec nad Nisou</h1>
@@ -48,15 +57,23 @@
         </section>
         
         <section>
-            <h2>Nejzajímavější místa</h2>
+            <h2>Zajímavá místa</h2>
             <div class="gallery">
                 <figure>
-                    <img class="galleryImage" src="../images/prehrada.jpg" alt="Jablonecká přehrada">
-                    <figcaption class="hidden">Jablonecká přehrada – oblíbené rekreační místo</figcaption>
+                    <img class="galleryImage" src="../images/jablonec.jpg" alt="Jablonecká radnice">
+                    <figcaption class="hidden"><b>Jablonecká radnice</b><br>Funkcionalistická dominanta z 30. let 20. století s unikátní vyhlídkovou terasou</figcaption>
                 </figure>
                 <figure>
-                    <img class="galleryImage" src="../images/muzeum.jpg" alt="Muzeum skla a bižuterie">
-                    <figcaption class="hidden">Muzeum skla a bižuterie – expozice historie sklářství</figcaption>
+                    <img class="galleryImage" src="../images/kralovka.jpg" alt="Rozhledna Královka">
+                    <figcaption class="hidden"><b>Rozhledna Královka</b><br> Oblíbená kamenná rozhledna s nádherným výhledem na Jizerské hory a daleké okolí</figcaption>
+                </figure>
+                <figure>
+                    <img class="galleryImage" src="../images/prehrada.jpg" alt="Josefodolská přehrada">
+                    <figcaption class="hidden"><b>Josefodolská přehrada</b><br> Největší vodní nádrž v Jizerských horách, zásobárna pitné vody s přísně chráněným okolím.</figcaption>
+                </figure>
+                <figure>
+                    <img class="galleryImage" src="../images/jizerka.jpg" alt="Osada Jizerka">
+                    <figcaption class="hidden"><b>Osada Jizerka</b><br>Nejvýše položená osada v Česku</figcaption>
                 </figure>
             </div>
         </section>
@@ -81,6 +98,9 @@
             
             <h3>Sportovní aktivity</h3>
             <p>Město je známé svou sportovní tradicí. K nejvýznamnějším sportovním událostem patří závody běžkařské Jizerské magistrály. Fotbalový klub FK Jablonec hraje v nejvyšší české soutěži.</p>
+            <figure>
+                <img class="galleryImage" src="../images/padesatka.jpg" alt="Jizerská padesátka">
+            </figure>
             
             <h3>Rekreace a outdoor</h3>
             <p>Jablonecká přehrada je populární místem pro plavání, rybaření a vodní sporty. Jizerské hory nabízejí skvělé podmínky pro turistiku, běžkování a cyklistiku.</p>

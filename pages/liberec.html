@@ -10,17 +10,26 @@
     <header>
         <nav>
             <div id="menu">
-                <a class="icon" id="houseIcon" href="../index.html"><img class="icon" src="https://www.svgrepo.com/show/512352/home-1393.svg" alt="Home icon"></a>
-                <button class="icon" id="hamburger"><img class="icon" src="https://www.svgrepo.com/show/500932/menu.svg" alt="Menu icon"></button>
+                <a class="icon" id="houseIcon" href="/index.html"><img class="icon"
+                        src="https://www.svgrepo.com/show/512352/home-1393.svg" alt="Home icon"></a>
+                <div class="onlyDesktop" id="desktopMenu">
+                    <a href="/pages/liberec.html"> Liberec</a>
+                    <a href="/pages/jablonec.html"> Jablonec</a>
+                    <a href="/pages/semily.html"> Semily</a>
+                    <a href="/pages/ceskaLipa.html"> Česká Lípa</a>
+                </div>
+                <button class="icon" id="switch"><img class="icon" id="switchIcon" src=""></button>
+                <button class="icon onlyMobile" id="hamburger"><img class="icon"
+                        src="https://www.svgrepo.com/show/500932/menu.svg" alt="Menu icon"></button>
             </div>
-            
-            <div class="hidden" id="dropdown">
-                <a href="./liberec.html">Okres Liberec</a>
-                <a href="./jablonec.html">Okres Jablonec</a>
-                <a href="./semily.html">Okres Semily</a>
-                <a href="./ceskaLipa.html">Okres Česká Lípa</a>
+
+            <div id="dropdown" class="onlyMobile">
+                <a href="/pages/liberec.html">Okres Liberec</a>
+                <a href="/pages/jablonec.html">Okres Jablonec</a>
+                <a href="/pages/semily.html">Okres Semily</a>
+                <a href="/pages/ceskaLipa.html">Okres Česká Lípa</a>
             </div>
-        </nav>    
+        </nav>
     </header>
     <main>
         <h1>Okres Liberec</h1>
@@ -48,27 +57,27 @@
         </section>
         
         <section>
-            <h2>Nejzajímavější místa</h2>
+            <h2>Zajímavá místa</h2>
             <div class="gallery">
                 <figure>
-                    <img class="galleryImage" src="../images/jested.jpg" alt="Jested">
-                    <figcaption class="hidden">Hotel a vysílač <b>Ještěd</b> s unikátní architekturou</figcaption>
+                    <img class="galleryImage" src="../images/jested.jpg" alt="Ještěd">
+                    <figcaption class="hidden"><b>Ještěd</b> <br>Hotel a vysílač s unikátní architekturou</figcaption>
                 </figure>
                 <figure>
-                    <img class="galleryImage" src="../images/tiger.jpg" alt="Bili tigr">
-                    <figcaption class="hidden">Nejstarší zoologická zahrada v Česku, známá chovem vzácných bílých tygrů</figcaption>
+                    <img class="galleryImage" src="../images/tiger.jpg" alt="Bílí tigr">
+                    <figcaption class="hidden"><b>Liberecká ZOO</b> <br>Nejstarší zoologická zahrada v Česku, známá chovem vzácných bílých tygrů</figcaption>
                 </figure>
                 <figure>
-                    <img class="galleryImage" src="../images/radnice.jpg" alt="Liberecka radnice">
-                    <figcaption class="hidden">Novogotická dominanta města z 19. století, inspirovaná vídeňskou radnicí</figcaption>
+                    <img class="galleryImage" src="../images/radnice.jpg" alt="Liberecká radnice">
+                    <figcaption class="hidden"><b>Liberecká radnice</b><br>Novogotická dominanta města <br> z 19. století, inspirovaná vídeňskou radnicí</figcaption>
                 </figure>
                 <figure>
-                    <img id="frydlant" class="galleryImage" src="../images/frydlant.jpg" alt="Zamek Frydlant">
-                    <figcaption class="hidden">Impozantní hrad a zámek s bohatou historií, kdysi sídlo Albrechta z Valdštejna</figcaption>
+                    <img id="frydlant" class="galleryImage" src="../images/frydlant.jpg" alt="Zámek Frýdlant">
+                    <figcaption class="hidden"><b>Zámek Frýdlant</b><br>Impozantní zámek s bohatou historií, kdysi sídlo Albrechta z Valdštejna</figcaption>
                 </figure>
                 <figure>
-                    <img class="galleryImage" src="../images/lemberk.jpg" alt="Zamek Lemberk">
-                    <figcaption class="hidden">Malebný renesanční zámek spojený s legendou o svaté Zdislavě</figcaption>
+                    <img class="galleryImage" src="../images/lemberk.jpg" alt="Zámek Lemberk">
+                    <figcaption class="hidden"><b>Zámek Lemberk</b><br>Malebný renesanční zámek spojený s legendou o svaté Zdislavě</figcaption>
                 </figure>
 
             </div>
