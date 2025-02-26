@@ -1,1 +1,2 @@
-https://vaclavkozeny.github.io/TWS/sp/
+https://vaclavkozeny.github.io/TWS/
+
