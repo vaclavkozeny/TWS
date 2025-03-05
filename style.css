@@ -63,6 +63,23 @@ main{
     margin-left: 1em;
     margin-right: 1em;
 }
+.darkmode a{
+    color:rgb(201, 3, 201);
+}
+li{
+    list-style-position: inside;
+}
+li>ul>li{
+    margin-left: 30px;
+}
+#table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+table, td, th{
+    border: 1px solid black;
+}
 @media (max-width: 768px){
     
     
@@ -81,7 +98,7 @@ main{
         background-color: #1f1b24;
     }
     #dropdown.darkmode a{
-        color: rgb(201, 3, 201);;
+        color: rgb(201, 3, 201);
     }
     
     .topImage{
@@ -127,9 +144,9 @@ main{
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
     main{
-        max-width: 80%;
+        max-width: 65%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -141,6 +158,7 @@ main{
         margin-bottom: 5px;
     }
     figcaption{
+        width: 100%;
         text-align: center;
         font-size: larger;
     }
