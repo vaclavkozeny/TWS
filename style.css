@@ -81,8 +81,6 @@ table, td, th{
     border: 1px solid black;
 }
 @media (max-width: 768px){
-    
-    
     #dropdown{
         display: flex;
         flex-direction: column;
@@ -92,7 +90,7 @@ table, td, th{
         transition: max-height 0.3s ease-in-out;
     }
     #dropdown.open{
-        max-height: 100px;
+        max-height: 200px;
     }
     #dropdown.darkmode{
         background-color: #1f1b24;
@@ -100,12 +98,18 @@ table, td, th{
     #dropdown.darkmode a{
         color: rgb(201, 3, 201);
     }
-    
+    #dropdown a{
+        font-size: larger;
+        margin-top: 5px;
+    }
     .topImage{
         width: 100%;
     }
+    figure{
+        width: 100%;
+    }
     .galleryImage{
-        width: 350px;
+        width: 100%;
         height: 350px;
         object-fit: cover;
         border-radius: 15px;
@@ -118,15 +122,14 @@ table, td, th{
         gap: 5px;
     }
     .hidden{
-        display: none;
+        visibility: hidden;
     }
-    
     figcaption{
         text-align: center;
         position: relative;
-        top: -60%;
-        height: 0px;
-        max-width: 350px;
+        top: -225px;
+        height: 0;
+        width: 100%;
         font-size: larger;
     }
     .captionOn{
@@ -144,15 +147,15 @@ table, td, th{
     }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 769px) {
     main{
-        max-width: 65%;
+        max-width: 80%;
         margin-left: auto;
         margin-right: auto;
     }
     .galleryImage{
-        width: 100%;
-        height: 700px;
+        min-width: 100%;
+        height: 50vh;
         object-fit: cover;
         border-radius: 15px;
         margin-bottom: 5px;
@@ -172,4 +175,27 @@ table, td, th{
         margin-left: auto;
         gap: 50px;
     }
+}
+@media (min-width: 1000px) {
+    main{
+        max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 5px;
+    }
+    figure{
+        border-radius: 15px;
+        overflow: hidden;
+        display: inline-block;
+    }
+    figure img {
+        width: 100%;
+        display: block;
+    }
+
 }

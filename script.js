@@ -40,19 +40,19 @@ document.addEventListener('DOMContentLoaded', function () {
         dropdown.classList.toggle('darkmode');
         if (body.classList.contains('darkmode')) {
             localStorage.setItem('darkMode', 'enabled');
-            icon.src = 'https://www.svgrepo.com/show/532875/moon.svg';
+            icon.src = "/images/moon.svg";
         } else {
             localStorage.setItem('darkMode', 'disabled');
-            icon.src = 'https://www.svgrepo.com/show/489165/sun-2.svg';
+            icon.src = "/images/sun.svg";
         }
     });
 });
 document.addEventListener("DOMContentLoaded", () => {
     let icon = document.getElementById('switchIcon');
     if (localStorage.getItem("darkMode") === "enabled") {
-        icon.src = "https://www.svgrepo.com/show/532875/moon.svg"
+        icon.src = "/images/moon.svg"
     }
     else {
-        icon.src = "https://www.svgrepo.com/show/489165/sun-2.svg"
+        icon.src = "/images/moon.svg"
     }
 });
