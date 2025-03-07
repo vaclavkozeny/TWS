@@ -10,10 +10,12 @@ if (menuButton && dropdownMenu) {
 if (imageContainers && window.matchMedia("(max-width: 768px)").matches) {
     imageContainers.forEach(e => {
         e.addEventListener('click', () => {
-            let capt = e.querySelector('figcaption');
-            capt.classList.toggle('hidden');
-            let img = e.querySelector('img');
-            img.classList.toggle('captionOn');
+            if(e.id != 'table'){
+                let capt = e.querySelector('figcaption');
+                capt.classList.toggle('hidden');
+                let img = e.querySelector('img');
+                img.classList.toggle('captionOn');
+            }
         });
     });
 }
@@ -40,19 +42,19 @@ document.addEventListener('DOMContentLoaded', function () {
         dropdown.classList.toggle('darkmode');
         if (body.classList.contains('darkmode')) {
             localStorage.setItem('darkMode', 'enabled');
-            icon.src = "/images/moon.svg";
+            icon.src = "https://www.svgrepo.com/show/532875/moon.svg";
         } else {
             localStorage.setItem('darkMode', 'disabled');
-            icon.src = "/images/sun.svg";
+            icon.src = "https://www.svgrepo.com/show/489165/sun-2.svg";
         }
     });
 });
 document.addEventListener("DOMContentLoaded", () => {
     let icon = document.getElementById('switchIcon');
     if (localStorage.getItem("darkMode") === "enabled") {
-        icon.src = "/images/moon.svg"
+        icon.src = "https://www.svgrepo.com/show/532875/moon.svg"
     }
     else {
-        icon.src = "/images/moon.svg"
+        icon.src = "https://www.svgrepo.com/show/489165/sun-2.svg"
     }
 });
