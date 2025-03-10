@@ -32,7 +32,7 @@ footer{
     align-items: center;
     padding: 5px;
 }
-footer.darkmode{
+.darkmode footer{
     background-color: #1f1b24;
 }
 #menu{
@@ -42,17 +42,17 @@ footer.darkmode{
     background-color: rgb(226, 226, 226);
     padding: 5px;
 }
-#menu.darkmode{
+.darkmode #menu{
     background-color: #1f1b24;
 }
-#menu.darkmode img{
+.darkmode #menu img{
     filter: invert(1);
 }
 .icon{
     width: 30px;
     height: 30px;
 }
-#switch{
+#print{
     margin-left: auto;
 }
 main{
@@ -124,10 +124,10 @@ textarea{
     #dropdown.open{
         max-height: 200px;
     }
-    #dropdown.darkmode{
+    .darkmode #dropdown{
         background-color: #1f1b24;
     }
-    #dropdown.darkmode a{
+    .darkmode #dropdown a{
         color: rgb(201, 3, 201);
     }
     #dropdown a{
@@ -240,5 +240,25 @@ textarea{
     }
     textarea{
         height: 15rem;
+    }
+}
+@media print {
+    header{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+    #gall{
+        display: none;
+    }
+    .standalone{
+        display: none;
+    }
+    a{
+        color: black;
+    }
+    h1, h2, h3 {
+        text-decoration: underline;
     }
 }
