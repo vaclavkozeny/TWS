@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Napiště nám</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="menu">
+                <a class="icon" id="houseIcon" href="./index.html"><img class="icon"
+                        src="https://www.svgrepo.com/show/512352/home-1393.svg" alt="Home icon"></a>
+                <div class="onlyDesktop" id="desktopMenu">
+                    <a href="./liberec.html">Liberec</a>
+                    <a href="./jablonec.html"> Jablonec</a>
+                    <a href="./semily.html"> Semily</a>
+                    <a href="./ceskaLipa.html"> Česká Lípa</a>
+                </div>
+                <button class="icon" id="switch"><img class="icon" id="switchIcon" src="../images/sun.svg"
+                        alt="Dark mode icon"></button>
+                <button class="icon onlyMobile" id="hamburger"><img class="icon"
+                        src="https://www.svgrepo.com/show/500932/menu.svg" alt="Menu icon"></button>
+            </div>
+
+            <div id="dropdown" class="onlyMobile">
+                <a href="./liberec.html">Okres Liberec</a>
+                <a href="./jablonec.html">Okres Jablonec</a>
+                <a href="./semily.html">Okres Semily</a>
+                <a href="./ceskaLipa.html">Okres Česká Lípa</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Napiště nám</h1>
+        <form>
+            <label>Typ zprávy:
+                <select id="type">
+                    <option>---</option>
+                    <option>Chyba funkčnosti</option>
+                    <option>Faktická chyba</option>
+                    <option>Jiné</option>
+                </select>
+            </label>
+            <br>
+            <lable>
+                Dokument:
+                <select id="document">
+                    <option>---</option>
+                    <option>index.html</option>
+                    <option>liberec.html</option>
+                    <option>jablonec.html</option>
+                    <option>semily.html</option>
+                    <option>ceskaLipa.html</option>
+                </select>
+            </lable>
+            <fieldset>
+                <legend>Vaše údaje</legend>
+                <label>
+                    Jméno a příjmění:
+                    <input type="text">
+                </label>
+                <label>
+                    Email:
+                    <input type="email" required>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Zpráva</legend>
+                <textarea id="message"></textarea>
+            </fieldset>
+            <button type="submit">Odeslat</button>
+        </form>
+    </main>
+    <footer>
+        <p><a href="https://github.com/vaclavkozeny">Václav Kožený</a></p>
+        <p>Vectors and icons by <a href="https://www.svgrepo.com" target="_blank">SVG Repo</a></p>
+        <p>Images and their licences: <a href="./pages/sources.html">link</a></p>
+        <p><a href="./napistenam.html">Napiště nám</a></p>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+
+</html>

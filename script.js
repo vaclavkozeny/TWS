@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
         body.classList.add('darkmode');
         header.classList.add('darkmode');
         footer.classList.add('darkmode');
-        dropdown.classList.add('darkmode')
+        dropdown.classList.add('darkmode');
     }
 
     toggleButton.addEventListener('click', function () {
@@ -49,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+// statefull ikona darkmodu
 document.addEventListener("DOMContentLoaded", () => {
     let icon = document.getElementById('switchIcon');
     if (localStorage.getItem("darkMode") === "enabled") {
